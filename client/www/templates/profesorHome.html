@@ -1,0 +1,36 @@
+<ion-view view-title="Home" align-title="left">
+    <ion-content>
+        <h1>Mis cursos - Mis Aulas</h1>
+
+        <table>
+            <thead>
+                <th>Curso</th>
+                <th>Aula</th>
+                <th>Crear tarea</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in cursosAulas">
+                    <td>{{item.curso}}</td>
+                    <td>{{item.aula}}</td>
+                    <td><a href="#">+</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Últimas asignaciones</h1>
+        <table>
+            <thead>
+                <th>Tarea</th>
+                <th>Curso-Aula</th>
+                <th>Fecha</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in asignaciones">
+                    <td>{{item.tarea}}</td>
+                    <td>{{item.cursoAula}}</td>
+                    <td>{{item.fecha}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ion-content>
+</ion-view>
